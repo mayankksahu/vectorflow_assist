@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 // NOTE: yahi URL SubmitButton me use ho raha hai.
 // Agar local backend check karna ho to yahan ko switch kar do:
 // const PING_URL = "http://localhost:8000/pipelines/parse";
-const PING_URL = "https://vectorshift-assignment.onrender.com/pipelines/parse";
+const PING_URL = "https://vectorshift-assist.onrender.com/pipelines/parse";
 
 export default function ConnectionStatus() {
   const [status, setStatus] = useState("checking"); // "online" | "offline" | "checking"
