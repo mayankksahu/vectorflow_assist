@@ -56,3 +56,9 @@ async def parse_pipeline(pipeline: Pipeline):
         "num_edges": num_edges,
         "is_dag": is_dag
     }
+
+
+# Health check for Render
+@app.get("/healthz")
+def health_check():
+    return {"status": "ok"}
